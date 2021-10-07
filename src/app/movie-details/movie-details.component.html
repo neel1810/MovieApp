@@ -1,0 +1,26 @@
+<!-- <p>movie-details works!</p> -->
+
+<!-- <p>{{detailData.original_title}}</p>
+<p>{{detailData.overview}}</p> -->
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{detailData.original_title}}</mat-card-title>
+    <mat-card-subtitle>---
+
+    </mat-card-subtitle>
+  </mat-card-header>
+
+    <img mat-card-image src={{getImageUrl(detailData.poster_path)}} >
+
+
+
+  <mat-card-content>
+    <p>
+      {{detailData.overview}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+
+  </mat-card-actions>
+</mat-card>

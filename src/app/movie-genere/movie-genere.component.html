@@ -1,0 +1,5 @@
+<!-- <p>movie-genere works!</p> -->
+<div *ngFor="let i of genreData">
+  <h1>{{i.name}}</h1>
+  <app-movie-list [myvalue]="i.id"></app-movie-list>
+</div>

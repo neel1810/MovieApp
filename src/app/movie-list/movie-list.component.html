@@ -1,0 +1,25 @@
+<!-- <p>movie-list works!</p> -->
+
+<div >
+<drag-scroll>
+  <div  drag-scroll-item  *ngFor="let i of movieData">
+    <img src={{getImageUrl(i.poster_path)}} [routerLink]=" ['movie-details',i.id]">
+
+  <h2 [routerLink]=" ['movie-details',i.id]">
+    {{i.original_title}}
+  </h2>
+
+
+  </div>
+</drag-scroll>
+</div>
+
+<!-- without cor -->
+<!-- <div *ngFor="let i of movieData">
+  <img src={{getImageUrl(i.poster_path)}}>
+
+  <p [routerLink]=" ['movie-details',i.id]">
+    {{i.original_title}}
+  </p>
+  <p ></p>
+</div> -->
